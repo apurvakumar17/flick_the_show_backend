@@ -1,0 +1,27 @@
+{
+  "name": "flick_the_show_backend",
+  "version": "1.0.0",
+  "description": "This repo contains all node js files for backend server of flick the show",
+  "main": "app.cjs",
+  "scripts": {
+    "start": "node app.cjs",
+    "dev": "nodemon app.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apurvakumar17/flick_the_show_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apurvakumar17/flick_the_show_backend/issues"
+  },
+  "homepage": "https://github.com/apurvakumar17/flick_the_show_backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.2",
+    "nodemon": "^3.1.10"
+  }
+}
