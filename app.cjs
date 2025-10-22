@@ -27,7 +27,6 @@ app.post("/addCarouselPoster", async (req, res) => {
     posterLink,
   });
 
-  res.redirect("/admin");
 });
 
 app.get("/deleteCarouselPoster/:id", async (req, res) => {
@@ -35,7 +34,6 @@ app.get("/deleteCarouselPoster/:id", async (req, res) => {
     _id: req.params.id,
   });
 
-  res.redirect("/admin");
 });
 
 //* Paths for movies
@@ -54,12 +52,10 @@ app.post("/addMovie", async (req, res) => {
     moviePoster,
   });
 
-  res.redirect("/admin");
 });
 
 app.get("/deleteMovie/:id", async (req, res) => {
   let deletedMovie = await movieModel.findOneAndDelete({ _id: req.params.id });
 
-  res.redirect("/admin");
 });
 app.listen(3000);
