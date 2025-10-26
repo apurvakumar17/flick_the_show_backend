@@ -61,8 +61,8 @@ app.get("/deleteMovie/:id", async (req, res) => {
 
 // Added a path to get a movie's trailer link from the database
 app.get("/getMovieTrailer/:id", async (req, res) => {
-  let movie = await movieModel.find({ _id: req.params.id });
-  res.send(movie);
+  let movie = await movieModel.find({ movieId: req.params.id });
+  res.send(movie.movieTrailer);
 
 });
 app.listen(3000);
