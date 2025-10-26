@@ -7,7 +7,7 @@ mongoose.connect(
 const movieSchema = mongoose.Schema({
   movieName: String,
   movieId: Number,
-  moviePoster: String,
+  movieTrailer: String,
 });
 
 module.exports = mongoose.model("movie", movieSchema);
