@@ -44,12 +44,12 @@ app.get("/readMovies", async (req, res) => {
 });
 
 app.post("/addMovie", async (req, res) => {
-  let { movieName, movieId, moviePoster } = req.body;
+  let { movieName, movieId, movieTrailer } = req.body;
 
   let movie = await movieModel.create({
     movieName,
     movieId,
-    moviePoster,
+    movieTrailer,
   });
 
 });
