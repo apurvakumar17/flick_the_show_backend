@@ -25,7 +25,6 @@ app.use(
     methods: ["GET", "POST", "DELETE", "OPTIONS"],
   })
 );
-app.options("*", cors());
 app.use(express.static(path.join(__dirname, "public")));
 
 //* Health and basic routes
