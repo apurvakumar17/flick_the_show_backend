@@ -12,6 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 // Explicit CORS to allow the deployed frontend
 const allowedOrigins = [
   "https://flick-the-show.vercel.app",
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+  "http://localhost:3000",
+  "http://127.0.0.1:3000",
 ];
 app.use(
   cors({
